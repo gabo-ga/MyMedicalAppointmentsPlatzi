@@ -16,4 +16,12 @@ public Patient(String name,String email){
     public void setHeight(double height) {
         this.height = height;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                "\nAge: " + birthday +
+                ", weight=" + getWeight() +
+                ", height=" + getHeight();
+    }
 }
