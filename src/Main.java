@@ -10,7 +10,7 @@ public class Main{
         myDoctor.addAvailableAppointment(new Date(),"6pm");
         myDoctor.addAvailableAppointment(new Date(),"8pm");
 
-        System.out.println(myDoctor.getAvailableAppointments());
+        System.out.println(myDoctor);
     }
 
 }

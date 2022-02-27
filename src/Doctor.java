@@ -1,3 +1,5 @@
+import org.w3c.dom.html.HTMLImageElement;
+
 import java.util.*;
 
 public class Doctor extends User{
@@ -25,6 +27,12 @@ public class Doctor extends User{
     public ArrayList<AvailableAppointment> getAvailableAppointments() {
         return availableAppointments;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "\nSpeciality: "+speciality + "\nAvailable: "+ availableAppointments.toString();
+    }
+
     public static class AvailableAppointment{
         private int id_availableAppointment;
         private Date date;
@@ -33,5 +41,11 @@ public class Doctor extends User{
             this.date = date;
             this.time = time;
         }
+        @Override
+        public String toString() {
+            return "Available Appointments \nDate: " +date+ "\nTime: "+ time;
+        }
     }
+
+
 }
