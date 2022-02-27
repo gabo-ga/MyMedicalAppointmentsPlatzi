@@ -8,7 +8,7 @@ public class Main{
 
         Patient patient1 = new Patient("Alejandra","alejandra@gmail.com");
 
-
+        
 
     }
 

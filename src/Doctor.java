@@ -3,8 +3,8 @@ import java.util.*;
 public class Doctor {
     //atributos
     static int id=0;//autoincrement
-    String name;
-    String speciality;
+    private String name;
+    private String speciality;
     //comportamientos
     Doctor(String name,String speciality){
         this.name = name;
