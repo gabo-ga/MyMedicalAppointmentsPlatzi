@@ -1,10 +1,8 @@
-public class Patient{
-    public int id;
-    private String name,email, address,phoneNumber,birthday,blood;
+public class Patient extends User{
+    private String birthday,blood;
     private double weight,height;
 public Patient(String name,String email){
-    this.name = name;
-    this.email = email;
+    super(name,email);
     }
     public void setWeight(double weight){
         this.weight = weight;
