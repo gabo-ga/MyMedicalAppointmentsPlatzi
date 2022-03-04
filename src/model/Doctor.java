@@ -8,7 +8,7 @@ public class Doctor extends User {
     private String speciality;
 
     //comportamientos
-    Doctor(String name,String email){
+    public Doctor(String name,String email){
         super(name,email);
         this.speciality = speciality;
     }
