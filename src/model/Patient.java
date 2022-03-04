@@ -26,4 +26,10 @@ public Patient(String name,String email){
                 ", weight=" + getWeight() +
                 ", height=" + getHeight();
     }
+
+    @Override
+    public void showdataUser() {
+        System.out.println("Paciente");
+        System.out.println("Historial completo desde nacimiento");
+    }
 }

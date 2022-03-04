@@ -8,6 +8,8 @@ public class Main{
         //showMenu();
         Doctor myDoctor = new Doctor("Gabriel Gonzales","Dermatologia");
         Patient patient1 = new Patient("Alejandra","alejandra@gmail.com");
+        User user = new Doctor("alejandro","ale@gmail.com");
+        user.showdataUser();
 
         myDoctor.addAvailableAppointment(new Date(),"6pm");
         myDoctor.addAvailableAppointment(new Date(),"8pm");
