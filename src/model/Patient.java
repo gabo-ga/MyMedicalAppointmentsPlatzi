@@ -1,3 +1,5 @@
+package model;
+
 public class Patient extends User{
     private String birthday,blood;
     private double weight,height;

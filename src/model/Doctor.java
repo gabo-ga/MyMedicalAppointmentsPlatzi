@@ -1,8 +1,10 @@
+package model;
+
 import org.w3c.dom.html.HTMLImageElement;
 
 import java.util.*;
 
-public class Doctor extends User{
+public class Doctor extends User {
     private String speciality;
 
     //comportamientos

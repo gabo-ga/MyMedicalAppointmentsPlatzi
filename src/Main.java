@@ -1,4 +1,6 @@
-import static ui.UIMenu.*;
+import model.Doctor;
+import model.Patient;
+import model.*;
 import java.util.*;
 
 public class Main{
