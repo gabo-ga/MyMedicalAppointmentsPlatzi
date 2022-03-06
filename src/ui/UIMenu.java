@@ -92,16 +92,15 @@ public class UIMenu {
                         emailCorrect = true;
                         //obtener el usuario logeado
                         doctorlogged = d;
-                        //mostrar el menu del doctor
+                        //showdoctormenu();
                     }
                 }
             }else if(userType == 2){
                 for(Patient p: patients){
                     if(p.getEmail().equals(email)){
                         emailCorrect = true;
-                        //obtener el usuario logeado
                         patientlogged = p;
-                        //mostrar el menu del doctor
+                        //showpatientmenu();
 
                     }
                 }

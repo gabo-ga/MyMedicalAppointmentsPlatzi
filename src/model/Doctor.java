@@ -1,7 +1,7 @@
 package model;
 
-import org.w3c.dom.html.HTMLImageElement;
-
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class Doctor extends User {
@@ -22,7 +22,7 @@ public class Doctor extends User {
     }
 
     ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
-    public void addAvailableAppointment(Date date, String time){
+    public void addAvailableAppointment(String date, String time){
         availableAppointments.add(new AvailableAppointment(date,time));
     }
 
@@ -45,15 +45,39 @@ public class Doctor extends User {
         private int id_availableAppointment;
         private Date date;
         private String time;
-        public AvailableAppointment(Date date, String time){
-            this.date = date;
+        SimpleDateFormat format = new SimpleDateFormat("dd/mm/yyyy");
+
+        public AvailableAppointment(String date, String time){
+            try {
+                this.date = format.parse(date);
+            }catch(ParseException e){
+                e.printStackTrace();
+            }
             this.time = time;
         }
+
+        public String getDate(String DATE) {
+            return format.format(date);
+        }
+
+        public void setDate(Date date) {
+            this.date = date;
+        }
+
+        public String getTime() {
+            return time;
+        }
+
+        public void setTime(String time) {
+            this.time = time;
+        }
+
         @Override
         public String toString() {
             return "Available Appointments \nDate: " +date+ "\nTime: "+ time;
         }
     }
+
 
 
 }
