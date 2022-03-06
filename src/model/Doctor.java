@@ -55,8 +55,10 @@ public class Doctor extends User {
             }
             this.time = time;
         }
-
-        public String getDate(String DATE) {
+    public Date getdate(String DATE){
+            return date;
+    }
+        public String getDate() {
             return format.format(date);
         }
 
